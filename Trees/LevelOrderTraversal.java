@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/binary-tree-level-order-traversal/
 // T(C) - O(n), S(C) - o(n)
+// return new ArrayList <>(); is good for List<List<Integer>> return type
+     
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
