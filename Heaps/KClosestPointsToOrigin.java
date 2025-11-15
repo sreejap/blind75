@@ -33,6 +33,6 @@ class Solution {
     }
 
     public int dist (int [] point) {
-        return point[0] * point[0] + point [1] * point [1];
+        return point[0] * point[0] + point [1] * point [1]; // we don't need to do sqrt here because Math sqrt is computationally expensive, no need to handle floating point issues
     }
 }
