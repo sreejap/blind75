@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/letter-combinations-of-a-phone-number/
-// T(C) - T(n) = O( n * 4ⁿ ), S(C) - o(n)
+// T(C) - T(n) = O( n * 4ⁿ ), If the input has n digits, the total number of possible combinations is: 4ⁿ (in worst case, e.g., all digits are 7 or 9)
+// S(C) - o(n)
 class Solution {
     
     // correct way to init map at the class level with entries
