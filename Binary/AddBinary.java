@@ -5,43 +5,36 @@ class Solution {
         int n = a.length();
         int m = b.length();
 
+        // ensure a is the longer string
         if (n < m) {
-            return addBinary (b,a);
-
-
+            return addBinary(b, a);
         }
 
-        int carry =0;
-        int sum = 0;
-        int j = m-1;
+        int carry = 0;
+        int j = m - 1;
 
-        StringBuilder sb = new StringBuilder ();
-        for (int i=n-1; i > -1; i--){
-            if (a.charAt(i)=='1'){
-                carry++;
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = n - 1; i >= 0; i--) {
+            int sum = carry;
+
+            if (a.charAt(i) == '1') {
+                sum += 1;
             }
 
-            if (j >-1 && b.charAt(j--)=='1'){
-                carry++;
+            if (j >= 0 && b.charAt(j--) == '1') {
+                sum += 1;
             }
 
-            if (carry %2==0){
-                sb.append('0');
-            } else { // make sure we handle both cases...
-                sb.append ('1');
-            }
-
-            carry =carry/2;
-            
-
+            sb.append(sum % 2);
+            carry = sum / 2;            
         }
 
-        if (carry == 1){
-            sb.append ('1');
+        if (carry == 1) {
+            sb.append('1');
         }
 
         sb.reverse();
         return sb.toString();
-        
     }
 }
