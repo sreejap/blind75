@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/trapping-rain-water/
 // T(C) - O(n), S(C) - O(n)
+// Rem: Always read through code and understand what vars are passed and what is going on
 class Solution {
     public int trap(int[] height) {
 
