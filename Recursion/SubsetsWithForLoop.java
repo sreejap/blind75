@@ -10,6 +10,16 @@ class Solution {
         result.add(new ArrayList<>(path));
 
         // Try every possible next element
+        /* What happens?
+
+        * You try choosing nums[i]
+        * You recurse deeper
+        * You come back and un-choose nums[i]
+        * Then the for loop automatically moves to the next candidate
+        * so the next iteration is the "exclude" branch"
+        * meaning: The loop itself handles exclusion. You do NOT manually call backtrack again.
+        
+        */
         for (int i = index; i < nums.length; i++) {
             path.add(nums[i]);              // choose nums[i]
             backtrack(nums, i + 1, path, result); // explore further
