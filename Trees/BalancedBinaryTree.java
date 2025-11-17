@@ -1,4 +1,5 @@
 // https://leetcode.com/problems/balanced-binary-tree/
+// T(C) - o(nlogn), S(C) - o(n)
 class Solution {
     public boolean isBalanced(TreeNode root) {
 
