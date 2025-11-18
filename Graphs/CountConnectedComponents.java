@@ -1,4 +1,4 @@
-// Count Connected Components in Network, Given n computers labeled 0 to n-1 and a list of bidirectional communication links, find the number of connected components.
+// from hackerrank: Count Connected Components in Network, Given n computers labeled 0 to n-1 and a list of bidirectional communication links, find the number of connected components.
 // Example: Input n = 4, links = [[0, 1], [2, 3]], Output 
 // T(C) - O(n+m), S(C) - O(n+m)
 
