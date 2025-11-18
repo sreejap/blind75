@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/binary-tree-right-side-view/
-// T(C) - O(n), S(C) - O(Diameter of tree)
+// T(C) - O(n)
+// S(C) - O(Diameter of tree) - to keep the queues, where D is a tree diameter. Let's use the last level to estimate the queue size. This level could contain up to N/2 tree nodes in the case of complete binary tree.
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
