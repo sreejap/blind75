@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/merge-intervals/submissions/1832746544/
+// https://leetcode.com/problems/merge-intervals/
 // T(C) - O(nlogn), S(C) - O(n)
 class Solution {
     public int[][] merge(int[][] intervals) {
